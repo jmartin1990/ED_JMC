@@ -1,14 +1,19 @@
 package clases;
 
 public class Main {
+	
+    // Constantes para las gravedades de los planetas (en m/s²)
+    public static final double GRAVEDAD_TIERRA = 9.81;
+    public static final double GRAVEDAD_MARTE = 3.72;
+    public static final double GRAVEDAD_JUPITER = 24.79;
 
     public static void main(String[] args) {
-        Persona_JmC pers1 = new Persona_JmC(1, "Papa", 85, 1.75, 22);
+    	Persona_JmC pers1 = new Persona_JmC(1, "Papa", 85, 1.75, 22);
         Persona_JmC pers2 = new Persona_JmC(2, "Pepe", 75, 1.80, 25);
 
-        JmC_GravedadPlaneta plan1 = new JmC_GravedadPlaneta(1, "Tierra", 9.81);
-        JmC_GravedadPlaneta plan2 = new JmC_GravedadPlaneta(2, "Marte", 3.72);
-        JmC_GravedadPlaneta plan3 = new JmC_GravedadPlaneta(3, "Jupiter", 24.79);
+        JmC_GravedadPlaneta plan1 = new JmC_GravedadPlaneta(1, "Tierra", GRAVEDAD_TIERRA);
+        JmC_GravedadPlaneta plan2 = new JmC_GravedadPlaneta(2, "Marte", GRAVEDAD_MARTE);
+        JmC_GravedadPlaneta plan3 = new JmC_GravedadPlaneta(3, "Jupiter", GRAVEDAD_JUPITER);
 
         // Masa de la persona (es la misma en todos los planetas)
         double masaPersona = pers1.getMasa();
