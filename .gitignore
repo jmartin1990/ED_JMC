@@ -1,0 +1,8 @@
+# Archivos compilados de Java
+*.class
+
+# Archivos generados por Eclipse
+
+/.settings
+
+/.project
